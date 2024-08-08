@@ -3,21 +3,21 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 const Home = () => {
   const now = new Date();
 
-const timeOptions = { 
-  hour: '2-digit', 
-  minute: '2-digit', 
-  timeZone: 'Asia/Kolkata'
-};
+const timeOptions: Intl.DateTimeFormatOptions = { 
+    hour: '2-digit', 
+    minute: '2-digit', 
+    timeZone: 'Asia/Kolkata'
+  };
 
-// Options for date formatting in IST
-const dateOptions = { 
-  dateStyle: 'full', 
-  timeZone: 'Asia/Kolkata'
-};
+  // Date options with IST time zone
+  const dateOptions: Intl.DateTimeFormatOptions = { 
+    dateStyle: 'full', 
+    timeZone: 'Asia/Kolkata'
+  };
 
-// Get time and date in IST
-const time = now.toLocaleTimeString('en-US', timeOptions);
-const date = new Intl.DateTimeFormat('en-US', dateOptions).format(now);
+  // Get time and date in IST
+  const time = now.toLocaleTimeString('en-US', timeOptions);
+  const date = new Intl.DateTimeFormat('en-US', dateOptions).format(now);
 
   return (
     <section className="flex size-full flex-col gap-5 text-white">
