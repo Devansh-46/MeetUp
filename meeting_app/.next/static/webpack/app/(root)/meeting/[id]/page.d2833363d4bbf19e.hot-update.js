@@ -1,0 +1,96 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(root)/meeting/[id]/page",{
+
+/***/ "(app-pages-browser)/./app/(root)/meeting/[id]/page.tsx":
+/*!******************************************!*\
+  !*** ./app/(root)/meeting/[id]/page.tsx ***!
+  \******************************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(app-pages-browser)/./node_modules/next/dist/compiled/react/jsx-dev-runtime.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(app-pages-browser)/./node_modules/next/dist/compiled/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _clerk_nextjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @clerk/nextjs */ \"(app-pages-browser)/./node_modules/@clerk/clerk-react/dist/index.mjs\");\n/* harmony import */ var _stream_io_video_react_sdk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @stream-io/video-react-sdk */ \"(app-pages-browser)/./node_modules/@stream-io/video-react-sdk/dist/index.es.js\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/navigation */ \"(app-pages-browser)/./node_modules/next/dist/api/navigation.js\");\n/* harmony import */ var _barrel_optimize_names_Loader_lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! __barrel_optimize__?names=Loader!=!lucide-react */ \"(app-pages-browser)/./node_modules/lucide-react/dist/esm/icons/loader.js\");\n/* harmony import */ var _hooks_useGetCallById__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/hooks/useGetCallById */ \"(app-pages-browser)/./hooks/useGetCallById.ts\");\n/* harmony import */ var _components_Alert__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/Alert */ \"(app-pages-browser)/./components/Alert.tsx\");\n/* harmony import */ var _components_Alert__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_Alert__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _components_MeetingSetup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/components/MeetingSetup */ \"(app-pages-browser)/./components/MeetingSetup.tsx\");\n/* harmony import */ var _components_MeetingRoom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/components/MeetingRoom */ \"(app-pages-browser)/./components/MeetingRoom.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \nvar _s = $RefreshSig$();\n\n\n\n\n\n\n\n\n\nconst MeetingPage = ()=>{\n    _s();\n    const { id } = (0,next_navigation__WEBPACK_IMPORTED_MODULE_3__.useParams)();\n    const { isLoaded, user } = (0,_clerk_nextjs__WEBPACK_IMPORTED_MODULE_8__.useUser)();\n    const { call, isCallLoading } = (0,_hooks_useGetCallById__WEBPACK_IMPORTED_MODULE_4__.useGetCallById)(id);\n    const [isSetupComplete, setIsSetupComplete] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    if (!isLoaded || isCallLoading) return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Loader_lucide_react__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {}, void 0, false, {\n        fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n        lineNumber: 20,\n        columnNumber: 42\n    }, undefined);\n    if (!call) return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n        className: \"text-center text-3xl font-bold text-white\",\n        children: \"Call Not Found\"\n    }, void 0, false, {\n        fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n        lineNumber: 23,\n        columnNumber: 5\n    }, undefined);\n    const notAllowed = call.type === \"invited\" && (!user || !call.state.members.find((m)=>m.user.id === user.id));\n    if (notAllowed) return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_components_Alert__WEBPACK_IMPORTED_MODULE_5___default()), {\n        title: \"You are not allowed to join this meeting\"\n    }, void 0, false, {\n        fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n        lineNumber: 31,\n        columnNumber: 26\n    }, undefined);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n        className: \"h-screen w-full\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_stream_io_video_react_sdk__WEBPACK_IMPORTED_MODULE_2__.StreamCall, {\n            call: call,\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_stream_io_video_react_sdk__WEBPACK_IMPORTED_MODULE_2__.StreamTheme, {\n                children: !isSetupComplete ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_MeetingSetup__WEBPACK_IMPORTED_MODULE_6__[\"default\"], {\n                    setIsSetupComplete: setIsSetupComplete\n                }, void 0, false, {\n                    fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n                    lineNumber: 39,\n                    columnNumber: 11\n                }, undefined) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_MeetingRoom__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {}, void 0, false, {\n                    fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n                    lineNumber: 41,\n                    columnNumber: 11\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n                lineNumber: 36,\n                columnNumber: 9\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n            lineNumber: 35,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"D:\\\\Codes - Projects\\\\meeting_app\\\\app\\\\(root)\\\\meeting\\\\[id]\\\\page.tsx\",\n        lineNumber: 34,\n        columnNumber: 5\n    }, undefined);\n};\n_s(MeetingPage, \"Ua8gE3Hviq/cpD/pF3rIHFmTrT0=\", false, function() {\n    return [\n        next_navigation__WEBPACK_IMPORTED_MODULE_3__.useParams,\n        _clerk_nextjs__WEBPACK_IMPORTED_MODULE_8__.useUser,\n        _hooks_useGetCallById__WEBPACK_IMPORTED_MODULE_4__.useGetCallById\n    ];\n});\n_c = MeetingPage;\n/* harmony default export */ __webpack_exports__[\"default\"] = (MeetingPage);\nvar _c;\n$RefreshReg$(_c, \"MeetingPage\");\n\n\n;\n    // Wrapped in an IIFE to avoid polluting the global scope\n    ;\n    (function () {\n        var _a, _b;\n        // Legacy CSS implementations will `eval` browser code in a Node.js context\n        // to extract CSS. For backwards compatibility, we need to check we're in a\n        // browser context before continuing.\n        if (typeof self !== 'undefined' &&\n            // AMP / No-JS mode does not inject these helpers:\n            '$RefreshHelpers$' in self) {\n            // @ts-ignore __webpack_module__ is global\n            var currentExports = module.exports;\n            // @ts-ignore __webpack_module__ is global\n            var prevSignature = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevSignature) !== null && _b !== void 0 ? _b : null;\n            // This cannot happen in MainTemplate because the exports mismatch between\n            // templating and execution.\n            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);\n            // A module can be accepted automatically based on its exports, e.g. when\n            // it is a Refresh Boundary.\n            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {\n                // Save the previous exports signature on update so we can compare the boundary\n                // signatures. We avoid saving exports themselves since it causes memory leaks (https://github.com/vercel/next.js/pull/53797)\n                module.hot.dispose(function (data) {\n                    data.prevSignature =\n                        self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports);\n                });\n                // Unconditionally accept an update to this module, we'll check if it's\n                // still a Refresh Boundary later.\n                // @ts-ignore importMeta is replaced in the loader\n                module.hot.accept();\n                // This field is set when the previous version of this module was a\n                // Refresh Boundary, letting us know we need to check for invalidation or\n                // enqueue an update.\n                if (prevSignature !== null) {\n                    // A boundary can become ineligible if its exports are incompatible\n                    // with the previous exports.\n                    //\n                    // For example, if you add/remove/change exports, we'll want to\n                    // re-execute the importing modules, and force those components to\n                    // re-render. Similarly, if you convert a class component to a\n                    // function, we want to invalidate the boundary.\n                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevSignature, self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports))) {\n                        module.hot.invalidate();\n                    }\n                    else {\n                        self.$RefreshHelpers$.scheduleUpdate();\n                    }\n                }\n            }\n            else {\n                // Since we just executed the code for the module, it's possible that the\n                // new exports made it ineligible for being a boundary.\n                // We only care about the case when we were _previously_ a boundary,\n                // because we already accepted this update (accidental side effect).\n                var isNoLongerABoundary = prevSignature !== null;\n                if (isNoLongerABoundary) {\n                    module.hot.invalidate();\n                }\n            }\n        }\n    })();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL2FwcC8ocm9vdCkvbWVldGluZy9baWRdL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7OztBQUVpQztBQUNPO0FBQzZCO0FBQ3pCO0FBQ047QUFFa0I7QUFDakI7QUFDYztBQUNGO0FBRW5ELE1BQU1VLGNBQWM7O0lBQ2xCLE1BQU0sRUFBRUMsRUFBRSxFQUFFLEdBQUdQLDBEQUFTQTtJQUN4QixNQUFNLEVBQUVRLFFBQVEsRUFBRUMsSUFBSSxFQUFFLEdBQUdaLHNEQUFPQTtJQUNsQyxNQUFNLEVBQUVhLElBQUksRUFBRUMsYUFBYSxFQUFFLEdBQUdULHFFQUFjQSxDQUFDSztJQUMvQyxNQUFNLENBQUNLLGlCQUFpQkMsbUJBQW1CLEdBQUdqQiwrQ0FBUUEsQ0FBQztJQUV2RCxJQUFJLENBQUNZLFlBQVlHLGVBQWUscUJBQU8sOERBQUNWLGtGQUFNQTs7Ozs7SUFFOUMsSUFBSSxDQUFDUyxNQUFNLHFCQUNULDhEQUFDSTtRQUFFQyxXQUFVO2tCQUE0Qzs7Ozs7O0lBTTNELE1BQU1DLGFBQWFOLEtBQUtPLElBQUksS0FBSyxhQUFjLEVBQUNSLFFBQVEsQ0FBQ0MsS0FBS1EsS0FBSyxDQUFDQyxPQUFPLENBQUNDLElBQUksQ0FBQyxDQUFDQyxJQUFNQSxFQUFFWixJQUFJLENBQUNGLEVBQUUsS0FBS0UsS0FBS0YsRUFBRTtJQUU3RyxJQUFJUyxZQUFZLHFCQUFPLDhEQUFDYiwwREFBS0E7UUFBQ21CLE9BQU07Ozs7OztJQUVwQyxxQkFDRSw4REFBQ0M7UUFBS1IsV0FBVTtrQkFDZCw0RUFBQ2pCLGtFQUFVQTtZQUFDWSxNQUFNQTtzQkFDaEIsNEVBQUNYLG1FQUFXQTswQkFFWCxDQUFDYSxnQ0FDQSw4REFBQ1IsZ0VBQVlBO29CQUFDUyxvQkFBb0JBOzs7Ozs4Q0FFbEMsOERBQUNSLCtEQUFXQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFNdEI7R0FqQ01DOztRQUNXTixzREFBU0E7UUFDR0gsa0RBQU9BO1FBQ0ZLLGlFQUFjQTs7O0tBSDFDSTtBQW1DTiwrREFBZUEsV0FBV0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvLi9hcHAvKHJvb3QpL21lZXRpbmcvW2lkXS9wYWdlLnRzeD8xYzIwIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50JztcclxuXHJcbmltcG9ydCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgeyB1c2VVc2VyIH0gZnJvbSAnQGNsZXJrL25leHRqcyc7XHJcbmltcG9ydCB7IFN0cmVhbUNhbGwsIFN0cmVhbVRoZW1lIH0gZnJvbSAnQHN0cmVhbS1pby92aWRlby1yZWFjdC1zZGsnO1xyXG5pbXBvcnQgeyB1c2VQYXJhbXMgfSBmcm9tICduZXh0L25hdmlnYXRpb24nO1xyXG5pbXBvcnQgeyBMb2FkZXIgfSBmcm9tICdsdWNpZGUtcmVhY3QnO1xyXG5cclxuaW1wb3J0IHsgdXNlR2V0Q2FsbEJ5SWQgfSBmcm9tICdAL2hvb2tzL3VzZUdldENhbGxCeUlkJztcclxuaW1wb3J0IEFsZXJ0IGZyb20gJ0AvY29tcG9uZW50cy9BbGVydCc7XHJcbmltcG9ydCBNZWV0aW5nU2V0dXAgZnJvbSAnQC9jb21wb25lbnRzL01lZXRpbmdTZXR1cCc7XHJcbmltcG9ydCBNZWV0aW5nUm9vbSBmcm9tICdAL2NvbXBvbmVudHMvTWVldGluZ1Jvb20nO1xyXG5cclxuY29uc3QgTWVldGluZ1BhZ2UgPSAoKSA9PiB7XHJcbiAgY29uc3QgeyBpZCB9ID0gdXNlUGFyYW1zKCk7XHJcbiAgY29uc3QgeyBpc0xvYWRlZCwgdXNlciB9ID0gdXNlVXNlcigpO1xyXG4gIGNvbnN0IHsgY2FsbCwgaXNDYWxsTG9hZGluZyB9ID0gdXNlR2V0Q2FsbEJ5SWQoaWQpO1xyXG4gIGNvbnN0IFtpc1NldHVwQ29tcGxldGUsIHNldElzU2V0dXBDb21wbGV0ZV0gPSB1c2VTdGF0ZShmYWxzZSk7XHJcblxyXG4gIGlmICghaXNMb2FkZWQgfHwgaXNDYWxsTG9hZGluZykgcmV0dXJuIDxMb2FkZXIgLz47XHJcblxyXG4gIGlmICghY2FsbCkgcmV0dXJuIChcclxuICAgIDxwIGNsYXNzTmFtZT1cInRleHQtY2VudGVyIHRleHQtM3hsIGZvbnQtYm9sZCB0ZXh0LXdoaXRlXCI+XHJcbiAgICAgIENhbGwgTm90IEZvdW5kXHJcbiAgICA8L3A+XHJcbiAgKTtcclxuXHJcblxyXG4gIGNvbnN0IG5vdEFsbG93ZWQgPSBjYWxsLnR5cGUgPT09ICdpbnZpdGVkJyAmJiAoIXVzZXIgfHwgIWNhbGwuc3RhdGUubWVtYmVycy5maW5kKChtKSA9PiBtLnVzZXIuaWQgPT09IHVzZXIuaWQpKTtcclxuXHJcbiAgaWYgKG5vdEFsbG93ZWQpIHJldHVybiA8QWxlcnQgdGl0bGU9XCJZb3UgYXJlIG5vdCBhbGxvd2VkIHRvIGpvaW4gdGhpcyBtZWV0aW5nXCIgLz47XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8bWFpbiBjbGFzc05hbWU9XCJoLXNjcmVlbiB3LWZ1bGxcIj5cclxuICAgICAgPFN0cmVhbUNhbGwgY2FsbD17Y2FsbH0+XHJcbiAgICAgICAgPFN0cmVhbVRoZW1lPlxyXG5cclxuICAgICAgICB7IWlzU2V0dXBDb21wbGV0ZSA/IChcclxuICAgICAgICAgIDxNZWV0aW5nU2V0dXAgc2V0SXNTZXR1cENvbXBsZXRlPXtzZXRJc1NldHVwQ29tcGxldGV9IC8+XHJcbiAgICAgICAgKSA6IChcclxuICAgICAgICAgIDxNZWV0aW5nUm9vbSAvPlxyXG4gICAgICAgICl9XHJcbiAgICAgICAgPC9TdHJlYW1UaGVtZT5cclxuICAgICAgPC9TdHJlYW1DYWxsPlxyXG4gICAgPC9tYWluPlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBNZWV0aW5nUGFnZTsiXSwibmFtZXMiOlsidXNlU3RhdGUiLCJ1c2VVc2VyIiwiU3RyZWFtQ2FsbCIsIlN0cmVhbVRoZW1lIiwidXNlUGFyYW1zIiwiTG9hZGVyIiwidXNlR2V0Q2FsbEJ5SWQiLCJBbGVydCIsIk1lZXRpbmdTZXR1cCIsIk1lZXRpbmdSb29tIiwiTWVldGluZ1BhZ2UiLCJpZCIsImlzTG9hZGVkIiwidXNlciIsImNhbGwiLCJpc0NhbGxMb2FkaW5nIiwiaXNTZXR1cENvbXBsZXRlIiwic2V0SXNTZXR1cENvbXBsZXRlIiwicCIsImNsYXNzTmFtZSIsIm5vdEFsbG93ZWQiLCJ0eXBlIiwic3RhdGUiLCJtZW1iZXJzIiwiZmluZCIsIm0iLCJ0aXRsZSIsIm1haW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./app/(root)/meeting/[id]/page.tsx\n"));
+
+/***/ }),
+
+/***/ "(app-pages-browser)/./components/Alert.tsx":
+/*!******************************!*\
+  !*** ./components/Alert.tsx ***!
+  \******************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+
+
+;
+    // Wrapped in an IIFE to avoid polluting the global scope
+    ;
+    (function () {
+        var _a, _b;
+        // Legacy CSS implementations will `eval` browser code in a Node.js context
+        // to extract CSS. For backwards compatibility, we need to check we're in a
+        // browser context before continuing.
+        if (typeof self !== 'undefined' &&
+            // AMP / No-JS mode does not inject these helpers:
+            '$RefreshHelpers$' in self) {
+            // @ts-ignore __webpack_module__ is global
+            var currentExports = module.exports;
+            // @ts-ignore __webpack_module__ is global
+            var prevSignature = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevSignature) !== null && _b !== void 0 ? _b : null;
+            // This cannot happen in MainTemplate because the exports mismatch between
+            // templating and execution.
+            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);
+            // A module can be accepted automatically based on its exports, e.g. when
+            // it is a Refresh Boundary.
+            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {
+                // Save the previous exports signature on update so we can compare the boundary
+                // signatures. We avoid saving exports themselves since it causes memory leaks (https://github.com/vercel/next.js/pull/53797)
+                module.hot.dispose(function (data) {
+                    data.prevSignature =
+                        self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports);
+                });
+                // Unconditionally accept an update to this module, we'll check if it's
+                // still a Refresh Boundary later.
+                // @ts-ignore importMeta is replaced in the loader
+                module.hot.accept();
+                // This field is set when the previous version of this module was a
+                // Refresh Boundary, letting us know we need to check for invalidation or
+                // enqueue an update.
+                if (prevSignature !== null) {
+                    // A boundary can become ineligible if its exports are incompatible
+                    // with the previous exports.
+                    //
+                    // For example, if you add/remove/change exports, we'll want to
+                    // re-execute the importing modules, and force those components to
+                    // re-render. Similarly, if you convert a class component to a
+                    // function, we want to invalidate the boundary.
+                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevSignature, self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports))) {
+                        module.hot.invalidate();
+                    }
+                    else {
+                        self.$RefreshHelpers$.scheduleUpdate();
+                    }
+                }
+            }
+            else {
+                // Since we just executed the code for the module, it's possible that the
+                // new exports made it ineligible for being a boundary.
+                // We only care about the case when we were _previously_ a boundary,
+                // because we already accepted this update (accidental side effect).
+                var isNoLongerABoundary = prevSignature !== null;
+                if (isNoLongerABoundary) {
+                    module.hot.invalidate();
+                }
+            }
+        }
+    })();
+
+
+/***/ })
+
+});
