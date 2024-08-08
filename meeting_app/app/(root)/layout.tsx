@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Metadata from ;
+import { Metadata } from 'next';
 
 import StreamVideoProvider from '@/providers/StreamClientProvider';
 
