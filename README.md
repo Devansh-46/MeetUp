@@ -1,6 +1,6 @@
 # MeetUp
 
-MeetUp is a video conferencing application inspired by Zoom, built with the latest web technologies to provide a seamless and secure communication experience. It allows users to create and join meetings, offering features such as real-time chat, screen sharing, and participant management.
+MeetUp is a video conferencing application inspired by Zoom, built with the latest web technologies to provide a seamless and secure communication experience. It allows users to create and join meetings, offering features such as real-time chat, screen sharing, and participant management. <a href="https://meet-up-beta.vercel.app/" target="_blank">Visit the Live Demo</a>
 <div align='center'>
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
