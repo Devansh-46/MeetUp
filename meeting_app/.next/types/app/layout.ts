@@ -1,6 +1,15 @@
-// File: D:\Codes - Projects\meeting_app\app\layout.tsx
+
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "MeetUp.",
+  description: "Your Video calling App",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
 
 type TEntry = typeof import('../../../app/layout.js')
 
